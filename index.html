@@ -10,7 +10,7 @@
 <body>
     <h1>OE로</h1>
     <p>
-        <a href="intent://action#Intent;scheme=oeapp;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.koco.oi_android;end">
+        <a href="intent://action#Intent;scheme=oeapp;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.koco.oi_android;end" id="go">
             가자
         </a>
     </p>
@@ -19,6 +19,14 @@
             얘는 무조건 어플 켜주는 놈
         </a> 
     </p>
+
+    <script>
+        const btn = document.querySelector('#go')
+
+        btn.addEventListener('click', () => {
+            window.close()
+        })
+    </script>
     
 </body>
 </html>
