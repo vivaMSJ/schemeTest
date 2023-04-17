@@ -23,8 +23,9 @@
     <script>
         const btn = document.querySelector('#go')
 
-        btn.addEventListener('click', () => {
-            window.open('','_self').close()
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.close()
         })
     </script>
     
